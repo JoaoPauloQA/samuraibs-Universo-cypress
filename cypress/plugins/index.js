@@ -22,14 +22,12 @@ module.exports = (on, config) => {
 
 
   // `config` is the resolved Cypress config
+  const configJson = require(config.configFile)
 
-  const pool = new Pool({
-    host: 'hopper.proxy.rlwy.net',
-    user: 'postgres',
-    password: 'BHCnntoeztrFDpeGsozbKVjHasPnvkyw',
-    database: 'railway',
-    port: '46490'
-  });
+  const pool = new Pool(configJson.dbConfig)
+    
+   
+  
 
   //Quando você cria uma Promise, o JavaScript te dá acesso a duas funções:
 

@@ -2,5 +2,14 @@
    "viewportWidth": 1440,
   "viewportHeight": 900 ,
 
-  "baseUrl": "http://localhost:3000"
+  "baseUrl": "http://localhost:3000",
+   "dbConfig": {
+      "host":"shinkansen.proxy.rlwy.net",
+      "user":"postgres",
+      "password":"mYtbQjfcZttuORIScywoPamTsxTDRdoI",
+      "database": "railway",
+      "port": 42822
+      
+   } 
+
 }
